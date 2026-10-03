@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090a0c" />
+  <meta name="description" content="Nihar's complete graphic design archive: identities, posters, illustrations, event graphics, and PDF work." />
+  <title>Full Archive &mdash; Nihar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/archive-page.css" />
+  <script defer src="/archive-data.js"></script>
+  <script defer src="/archive.js"></script>
+  <script defer src="/cursor-trail.js"></script>
+  <script defer src="/soundscape.js"></script>
+</head>
+<body class="archive-page">
+  <div class="page-transition-overlay" aria-hidden="true"></div>
+  <div class="archive-shell">
+    <header class="site-header archive-header" id="top">
+      <a class="wordmark" href="/" data-transition aria-label="Back to Nihar home"><span class="wordmark-mark">N/</span><span>NIHAR</span></a>
+      <nav class="main-nav" aria-label="Archive navigation"><a href="/" data-transition>Home</a><a href="#archive-grid">All work</a></nav>
+      <div class="archive-header-actions"><span class="archive-status">Complete archive</span><div class="header-controls"><button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false"><span class="theme-icon" aria-hidden="true">&#9680;</span><span class="theme-label">Light mode</span></button><button class="sound-toggle" type="button" data-sound-toggle aria-label="Turn sound on" aria-pressed="false"><span aria-hidden="true">♪</span><span data-sound-label>Sound off</span></button></div></div>
+    </header>
+    <main>
+      <section class="archive-hero section-pad">
+        <div class="hero-topline"><span>( 08 &mdash; / FULL ARCHIVE )</span><span>Every file, one visual library</span></div>
+        <div class="archive-hero-copy"><p class="eyebrow">Images / PDFs / Experiments</p><h1>Everything<br /><em>in here.</em><span class="lime-dot">.</span></h1><p class="archive-lede">A complete index of the design work in my studio folders &mdash; including identity studies, posters, invitations, illustrations, event systems, and printable PDFs.</p></div>
+        <div class="archive-stats" aria-label="Archive statistics"><div><strong id="asset-count">48</strong><span>files</span></div><div><strong id="image-count">35</strong><span>images</span></div><div><strong id="pdf-count">13</strong><span>PDFs</span></div></div>
+      </section>
+      <section class="archive-library section-pad" id="archive-grid">
+        <div class="archive-controls"><div class="archive-filter-bar" id="archive-filters" role="group" aria-label="Filter full archive"></div><label class="archive-search"><span>Find a file</span><input id="archive-search" type="search" placeholder="Search title or folder" /></label></div>
+        <div class="archive-grid-full" id="archive-items" aria-live="polite"></div>
+        <p class="archive-empty" id="archive-empty" hidden>No files match that search yet.</p>
+      </section>
+    </main>
+    <footer class="archive-footer section-pad"><a href="/" data-transition>&#8592; Back to the main portfolio</a><span>&copy; 2026 Nihar / Full working archive</span></footer>
+  </div>
+  <div class="archive-lightbox" id="archive-lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="archive-lightbox-title"><button class="archive-lightbox-backdrop" type="button" aria-label="Close image viewer"></button><div class="archive-lightbox-panel"><div class="archive-lightbox-toolbar"><span id="archive-lightbox-counter">01 / 01</span><button class="archive-lightbox-close" type="button">Close &times;</button></div><figure><img id="archive-lightbox-image" src="" alt="" /><figcaption id="archive-lightbox-title"></figcaption></figure></div></div>
+</body>
+</html>
+
